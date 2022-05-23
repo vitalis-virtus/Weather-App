@@ -4,7 +4,7 @@
   padding: 20px;
   max-width: 400px;
   width: 100%;
-  background: $lite-background;
+  background: var(#{--components-background-default});
   box-shadow: $box-shadow;
   border-radius: 20px;
 
@@ -12,7 +12,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 49px;
-    color: $primary-dark-color;
+    color: var(#{--text-color-default});
   }
 }
 
@@ -41,10 +41,9 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-    color: $primary-lite-color;
+    color: $primary-light-color;
   }
-  .this__time{
+  .this__time {
     margin-bottom: 14px;
   }
-
 }
