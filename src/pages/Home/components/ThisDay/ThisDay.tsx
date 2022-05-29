@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 import { GlobalSvgSelector } from "../../../../assets/images/icons/global/GlobalSvgSelector";
 import { Weather } from "../../../../store/types/types";
 
@@ -9,6 +10,9 @@ type Props = {
 };
 
 export const ThisDay = ({ weather }: Props) => {
+  // console.log("weather: ", weather);
+  // console.log("weather name: ", weather.name);
+
   return (
     <div className={s.this__day}>
       <div className={s.top__block}>
@@ -20,10 +24,10 @@ export const ThisDay = ({ weather }: Props) => {
       </div>
       <div className={s.bottom__block}>
         <div className={s.this__time}>
-          Час: <span>14:08</span>
+          Час: <span>{<Moment format="HH:mm:ss" interval={1000} />}</span>
         </div>
         <div className={s.this__city}>
-          Місто: <span>Kyiv</span>
+          Місто: <span>{weather.name}</span>
         </div>
       </div>
     </div>

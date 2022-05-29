@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 import { GlobalSvgSelector } from "../../assets/images/icons/global/GlobalSvgSelector";
 import { Item } from "../../pages/Home/components/ThisDayInfo/ThisDayInfo";
 import { ThisDayItem } from "../../pages/Home/components/ThisDayInfo/ThisDayItem";
@@ -40,7 +41,7 @@ export const Popup = (props: Props) => {
             <GlobalSvgSelector id="sun" />
           </div>
           <div className={s.day__time}>
-            Час: <span>14:08</span>
+          Час: <span>{<Moment format="HH:mm" interval={1000} />}</span>
           </div>
           <div className={s.day__city}>
             Місто: <span>Kyiv</span>

@@ -16,8 +16,9 @@ type Response = {
 const initialState: CurrentWeather = {
   weather: {
     main: {
-      temp: 0,
+      temp: 0,  //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
     },
+    name: "", // city name
   },
   isLoading: false,
   response: {
