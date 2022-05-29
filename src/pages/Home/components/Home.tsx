@@ -13,7 +13,6 @@ type Props = {};
 export const Home = (props: Props) => {
   const dispatch = useCustomDispatch();
   const { weather } = useCustomSelector(selectCurrentWeatherData);
-
   useEffect(() => {
     dispatch(fetchCurrentWeather("paris"));
   }, []);
