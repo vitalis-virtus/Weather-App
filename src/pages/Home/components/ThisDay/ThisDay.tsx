@@ -10,8 +10,6 @@ type Props = {
 };
 
 export const ThisDay = ({ weather }: Props) => {
-  // console.log("weather: ", weather);
-  // console.log("weather name: ", weather.name);
 
   return (
     <div className={s.this__day}>
